@@ -1,0 +1,9 @@
+.cart {
+    @extend %wrapper;
+
+    &-cart {
+        width: 1440px;
+        height: 800px;
+        background-size: cover;
+    }
+}

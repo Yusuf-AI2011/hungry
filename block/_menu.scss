@@ -1,0 +1,81 @@
+.menu {
+  @extend %wrapper;
+  background-color: #ffffff;
+
+  &-title {
+    margin-top: 40px;
+    font-family: "Bad Script";
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .hr {
+    @extend %hr;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  &-strong {
+    width: 580px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &-hr {
+    width: 2px;
+    height: 50px;
+    background-color: #33333333;
+    border: 1px solid #33333333;
+  }
+
+  &-texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  &-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+  }
+
+  &-boxwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  &-info {
+    margin-top: 20px;
+    &-title {
+      font-family: "Bad Script";
+      font-size: 18px;
+      line-height: 18px;
+      color: #333333;
+    }
+    &-text {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: rgba(51, 51, 51, 0.5);
+    }
+  }
+}

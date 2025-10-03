@@ -1,0 +1,130 @@
+.intro {
+   @extend %wrapper;
+   background-image: url(/images/header-bgFISH.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        margin-right: 100px;
+        gap: 150px;
+    }
+
+   &-left {
+      &-text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        color: #FFFFFF;
+        transform: rotate(-90deg);
+      }
+   }
+
+   &-center {
+    margin-right: 50px;
+
+      &-box {
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+
+      &-text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+
+      &-title {
+        font-family: 'Bad Script';
+        font-size: 90px;
+        line-height: 0px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 50px;
+      }
+
+      .hr {
+        margin-top: 20px;
+        width: 60px;
+        height: 5px;
+        background-color: #E8C300;
+        border: none;
+        border-radius: 10px;
+      }
+
+      &-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      &-button {
+        width: 200px;
+        height: 60px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: all;
+        transition-duration: 1s;
+      }
+
+      &-button:hover {
+        transform: scale(1.2);
+        background: #E8C300;
+        border: #E8C300;
+      }
+   }
+
+   &-right {
+    &-icon {
+        font-size: 30px;
+        color: #ffffff;
+        transition: all 1s;
+    } 
+
+    &-iconb {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        transition: all 1s;
+    }
+
+    &-iconb:hover &-icon{
+        color: #E8C300;
+        transform: scale(1.1);
+    }
+
+    &-iconb:hover {
+        transform: scale(1.1);
+        border: 1px solid #E8C300;
+    }
+   }
+}

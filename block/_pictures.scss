@@ -1,0 +1,41 @@
+.pictures {
+  width: 1440px;
+  height: 360px;
+  border: 1px solid;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-pic1,
+  &-pic2,
+  &-pic3,
+  &-pic4 {
+    width: 360px;
+    height: 360px;
+  }
+
+  &-pic1 {
+    background-image: url("/images/RectanglePIC1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-pic2 {
+    background-image: url("/images/RectanglePIC2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-pic3 {
+    background-image: url("/images/RectanglePIC3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-pic4 {
+    background-image: url("/images/RectanglePIC4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

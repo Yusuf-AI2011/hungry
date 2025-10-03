@@ -1,0 +1,101 @@
+.wedding {
+  @extend %wrapper;
+  background-image: url("/images/specialty's-bgCHOCOLATE.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  &-strong {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 200px;
+  }
+
+  &-left {
+    position: relative;
+    width: 470px;
+    height: 470px;
+    background-image: url("/images/RectangleRING.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-right {
+    position: relative;
+    width: 470px;
+    height: 470px;
+    background-image: url("/images/RectangleWEDDING.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+  }
+
+  &-title1,
+  &-title2 {
+    position: absolute;
+    width: 350px;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  &-title1 {
+    font-family: "Bad Script";
+    font-size: 24px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    transform: rotate(90deg);
+    left: 210px;
+  }
+
+  &-title2 {
+    font-family: "Bad Script";
+    font-size: 24px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    transform: rotate(-90deg);
+    right: 210px;
+  }
+
+  &-quad1,
+  &-quad2 {
+    position: absolute;
+    @extend %quad;
+  }
+
+  &-quad1 {
+    right: 300px;
+  }
+
+  &-quad2 {
+    left: 300px;
+  }
+}

@@ -1,0 +1,92 @@
+.master {
+  width: 1440px;
+  height: 600px;
+  @extend %wrapper;
+  background-color: #ffffff;
+  background-image: url("/images/specialty's-bgSALAD.png");
+  background-size: cover;
+  background-attachment: fixed;
+
+  &-left {
+    width: 720px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &-img {
+    position: relative;
+    width: 475px;
+    height: 475px;
+    background-image: url(/images/RectangleCHEF.png);
+  }
+
+  &-quad {
+    position: absolute;
+    @extend %quad;
+    right: 270px;
+    top: 130px;
+  }
+
+  &-strong {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &-leftright {
+    margin-top: 100px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-right {
+    width: 600px;
+  }
+
+  &-title {
+    font-family: 'Bad Script';
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .hr {
+    width: 60px;
+    height: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e8c300;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  &-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &-strong1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 20px;
+    text-align: center;
+  }
+}

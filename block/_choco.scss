@@ -1,0 +1,83 @@
+.choco {
+    @extend %wrapper;
+    background-image: url('/images/specialty\'s-bgCHOCOLATE.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &-strongt {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &-leftright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+    }
+
+    &-left {
+        width: 470px;
+        height: 470px;
+        background-image: url('/images/RectangleICECREAM.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &-right {
+        width: 600px
+    }
+
+    &-quad {
+        @extend %quad;
+        margin-top: 100px;
+        margin-left: -70px;
+    }
+
+    .hr {
+        @extend %hr;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    &-title {
+        font-family: 'Bad Script';
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &-strong {
+        margin-top: 20px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-size: 18px;
+        line-height: 28px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    &-text {
+        margin-top: 20px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9);
+    }
+}
