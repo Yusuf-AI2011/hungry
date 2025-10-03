@@ -92,5 +92,10 @@
     border: none;
     background-color: #e8c300;
     color: #ffffff;
+    transition: all 1s;
+  }
+
+   &-button:hover {
+    transform: scale(1.1);
   }
 }
